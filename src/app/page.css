@@ -1,0 +1,12 @@
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

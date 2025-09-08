@@ -1,0 +1,18 @@
+.produto {
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.produto .nome{
+    order: 1;
+    font-weight: bolder;
+}
+.produto .foto{
+    order: 2;
+}
+.produto .preco{
+    order: 3;
+}
