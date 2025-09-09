@@ -6,7 +6,7 @@ const produtos:  Produto [] = [
         nome: "Notebook Dell",
         fotoUrl:
         "https://m.media-amazon.com/images/I/51Gq+Fe6RlL._UF894,1000_QL80_.jpg",
-        preco: 3.99,
+        preco: 3999.99,
     },
 
     {

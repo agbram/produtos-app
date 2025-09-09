@@ -3,21 +3,10 @@ import "./page.css";
 import ProductCard from "@/components/productCard";
 import Produto from "@/models/produto";
 import produtos from "@/mocks/produtos";
+import ProductList from "@/components/productList";
 
 
 export default function Home() {
-    
-  function mapear(produtos: Produto) {
-    return (
-      <ProductCard
-        key={produtos.id}
-        nome={produtos.nome}
-        fotoUrl={produtos.fotoUrl}
-        preco={produtos.preco}
-      />
-    );
-  }
-
   return (
     <>
       <header>
@@ -25,7 +14,7 @@ export default function Home() {
       </header>
 
       <main>
-        <ol className="produtos">{produtos.map(mapear)}</ol>
+       <ProductList produtos={produtos} />
       </main>
     </>
   );
