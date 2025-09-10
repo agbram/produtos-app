@@ -1,6 +1,6 @@
 import Produto from "@/models/produto";
-import ProductCard from "../productCard";
-import "./styles.css"
+import ProductCard from "../ProductCard";
+import styles from "./styles.module.css"
 
 type Props = {
     produtos: Produto[];
@@ -16,7 +16,7 @@ function mapear(produto: Produto) {
   }
 function ProductList(props: Props){
     return(
-        <ol className="produtos">{props.produtos.map(mapear)}</ol>
+        <ol className={styles.produtos}>{props.produtos.map(mapear)}</ol>
     );
 }
 

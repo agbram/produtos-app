@@ -1,0 +1,35 @@
+.produto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 114, 255, 0.2); /* sombra com tom do azul */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 280px;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.35);
+}
+
+.produto .nome {
+  font-weight: 600;
+  text-align: center;
+  color: #0072ff; /* azul primário */
+}
+
+.produto .foto {
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: #f5f7fa; /* fallback se imagem não carregar */
+}
+
+.produto .preco {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00b894; /* verde-água para contraste */
+}
