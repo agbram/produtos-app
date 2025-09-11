@@ -32,6 +32,7 @@ const produtos: Produto[] = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSJFVu79UoHyKTUuJDy6pgY_FeIqxcZ87jkw&s",
     preco: 330,
   },
+
 ];
 
 export default produtos;
